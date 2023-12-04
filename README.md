@@ -11,6 +11,6 @@ Contains:
 
 
 Requirements:
-besides the usual `numpy`, `scipy`, `pyplot`, `pandas`, install `numba`
+besides the usual `numpy`, `scipy`, `pyplot`, `pandas`, install `numba`.
 
 

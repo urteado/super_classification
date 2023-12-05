@@ -3,7 +3,7 @@ import pandas as pd
 import scipy.stats as stats
 from scipy.special import erfc
 from scipy.integrate import quad
-from numba import jit, njit, prange  # if not using, also comment out the @jit/@njit above functions
+from numba import jit, njit, prange  # if not using, also comment out the @jit/@njit decorators
 from scipy.stats import invgamma
 
 

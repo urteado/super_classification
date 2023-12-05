@@ -1,7 +1,7 @@
 # super_classification
 
-Implementation of key asymptotic performance metrics presented in the paper [Classification of Heavy-tailed Features in High Dimensions: a Superstatistical Approach](https://arxiv.org/abs/2304.02912).
-The current version does is for a setting that demonstrates the key phenomenology and is numerically lightest: binary classification, square loss and l2 regularisation, with variance of datapoints distributed as an inverse-gamma random variable with shape parameter $a$ and scale parameter $c$.
+Implementation of key asymptotic performance metrics presented in the Neurips 2023 paper [Classification of Heavy-tailed Features in High Dimensions: a Superstatistical Approach](https://arxiv.org/abs/2304.02912).
+The current version is for a setting that demonstrates the key phenomenology and is numerically lightest: binary classification, square loss and l2 regularisation, with variance of datapoints distributed as an inverse-gamma random variable with shape parameter $a$ and scale parameter $c$.
 
 Contains: 
 - `how_to.ipynb` python notebook made to set parameters, run theory and simulations, and plot both

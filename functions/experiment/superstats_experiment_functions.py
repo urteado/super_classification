@@ -74,19 +74,20 @@ def get_error_superstats(samples, p, lamb, seeds, var_distr, var_distr_param, pe
     for i in range(seeds):
 
         mean = get_mean_superstats(d)                           # generate new mean at each seed
-        delt=gendeltas(samples, var_distr, var_distr_param)     # generate a new set of deltas at each seed
-
+        delt_train=gendeltas(samples, var_distr, var_distr_param)     # generate a new set of deltas for each seed
+        delt_test=gendeltas(samples, var_distr, var_distr_param)
+        
         X_train, y_train = get_samples_superstats(n=samples, 
                                        mean=mean,
                                        prob=p,
-                                       deltas=delt,
+                                       deltas=delt_train,
                                        d=d,
                                        random_labels=random_labels,
                                        ratio_random=ratio_random)
         X_test, y_test = get_samples_superstats(n=samples,
                                      mean=mean,
                                      prob=p,
-                                     deltas=delt,
+                                     deltas=delt_test,
                                      d=d,
                                      random_labels=random_labels,
                                      ratio_random=ratio_random)
